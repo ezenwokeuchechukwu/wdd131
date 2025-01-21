@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nigeria - The Heart of Africa">
+    <meta name="author" content="Ezenwoke Uchechukwu">
+    <title>Discover Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Nigeria</h1>
+        <button class="hamburger">&#9776;</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#facts">Facts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h2>Welcome to Nigeria</h2>
+            <p>Explore the beauty, culture, and wonders of Africa's most populous country. Nigeria covers 356,668 sq miles (923,769 sq kilometers) and is diverse in people and culture.</p>
+            <picture>
+                <source srcset="images/nigeriaview.jpg" media="(min-width: 768px)">
+                <img src="images/nigeriaview.jpg" alt="Beautiful Nigeria landscape">
+            </picture>
+        </section>
+
+        <section id="weather" class="weather">
+            <h3>Weather <span class="weather-icon">⛅</span></h3>
+            <p>Current Conditions: <span id="temp">20°C</span>, Wind Speed: <span id="wind">10 km/h</span></p>
+            <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+        </section>
+
+        <section id="facts" class="facts">
+            <h3>Quick Facts About Nigeria</h3>
+            <ul>
+                <li>Capital: Abuja</li>
+                <li>Largest City: Lagos</li>
+                <li>Official Language: English</li>
+                <li>National Languages: Hausa, Igbo, Yoruba</li>
+                <li>Ethnic Groups: 30% Hausa, 15.5% Yoruba, 15.2% Igbo, and more</li>
+                <li>Population: 230,842,743 (2023)</li>
+                <li>Currency: Naira (₦)</li>
+                <li>Time Zone: UTC+01:00</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ezenwoke Uchechukwu</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
