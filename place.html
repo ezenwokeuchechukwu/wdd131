@@ -6,13 +6,13 @@
     <meta name="description" content="Explore Nigeria - The Heart of Africa">
     <meta name="author" content="Ezenwoke Uchechukwu">
     <title>Discover Nigeria</title>
-    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
-    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Discover Nigeria</h1>
-        <button class="hamburger">&#9776;</button>
+        <h1>Nigeria</h1>
+        <button class="hamburger" aria-label="Open Menu">&#9776;</button>
         <nav class="menu">
             <ul>
                 <li><a href="#hero">Home</a></li>
@@ -25,12 +25,29 @@
 
     <main>
         <section id="hero" class="hero">
-            <h2>Welcome to Nigeria</h2>
-            <p>Explore the beauty, culture, and wonders of Africa's most populous country. Nigeria covers 356,668 sq miles (923,769 sq kilometers) and is diverse in people and culture.</p>
-            <picture>
-                <source srcset="images/nigeriaview.jpg" media="(min-width: 768px)">
-                <img src="images/nigeriaview.jpg" alt="Beautiful Nigeria landscape">
-            </picture>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Welcome to Nigeria</h2>
+                    <p>Explore the beauty, culture, and wonders of Africa's most populous country. Nigeria covers 356,668 sq miles (923,769 sq kilometers) and is diverse in people and culture.</p>
+                </div>
+                <picture>
+                    <source srcset="images/nigeriaview.jpg" media="(min-width: 768px)">
+                    <img src="images/nigeriaview.jpg" alt="Beautiful Nigeria landscape">
+                </picture>
+            </div>
+            <aside class="quick-facts">
+                <h3>data</h3>
+                <ul>
+                    <li>Capital: Abuja</li>
+                    <li>Largest City: Lagos</li>
+                    <li>Official Language: English</li>
+                    <li>National Languages: Hausa, Igbo, Yoruba</li>
+                    <li>Ethnic Groups: 30% Hausa, 15.5% Yoruba, 15.2% Igbo, and more</li>
+                    <li>Population: 230,842,743 (2023)</li>
+                    <li>Currency: Naira (&#8358;)</li>
+                    <li>Time Zone: WAT +1:00</li>
+                </ul>
+            </aside>
         </section>
 
         <section id="weather" class="weather">
@@ -40,23 +57,15 @@
         </section>
 
         <section id="facts" class="facts">
-            <h3>Quick Facts About Nigeria</h3>
-            <ul>
-                <li>Capital: Abuja</li>
-                <li>Largest City: Lagos</li>
-                <li>Official Language: English</li>
-                <li>National Languages: Hausa, Igbo, Yoruba</li>
-                <li>Ethnic Groups: 30% Hausa, 15.5% Yoruba, 15.2% Igbo, and more</li>
-                <li>Population: 230,842,743 (2023)</li>
-                <li>Currency: Naira (₦)</li>
-                <li>Time Zone: wat+1:00</li>
-            </ul>
+            <h3>Explore More Facts</h3>
+            <p>Nigeria is a hub of cultural diversity, with over 250 ethnic groups. It boasts some of the most vibrant festivals and breathtaking landscapes in Africa.</p>
         </section>
     </main>
-
     <footer>
-        <p>&copy; <span id="currentYear"></span> Ezenwoke Uchechukwu</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
+        <p>&copy; <span id="currentyear"></span> Ezenwoke Uchechukwu, Nigeria.</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
+
+
