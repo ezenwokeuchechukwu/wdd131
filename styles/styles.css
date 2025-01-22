@@ -25,6 +25,14 @@ header {
     font-family: var(--heading-font-family); /* Use Playfair Display for the header */
 }
 
+header::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin-top: 1rem;
+}
+
 nav ul {
     display: none;
     flex-direction: column;
@@ -75,6 +83,14 @@ footer {
     background-color: var(--primary-color);
     color: white;
     font-family: var(--font-family); /* Use Roboto for footer text */
+}
+
+footer::after {
+    content: "Thank you for visiting!";
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ffffffcc; /* Slightly transparent white text */
 }
 
 .menu ul.show {
