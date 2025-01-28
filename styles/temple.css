@@ -114,14 +114,21 @@ footer {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+    left: 0;
+    margin-top: auto; /* Ensures footer stays at the bottom of the page */
 }
 
 footer p {
     margin: 0.5rem 0;
 }
+
+#currentyear {
+    font-weight: bold;
+}
+
 
 #currentyear {
     font-weight: bold;
