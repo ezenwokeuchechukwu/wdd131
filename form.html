@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Ezenwoke Uchechukwu">
+    <link rel="stylesheet" href="styles/cssstyles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="scripts/formscript.js"></script>
+    <script defer src="scripts/review.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <form action="review.html" method="get">
+        <!-- Product Name Dropdown -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <label><input type="radio" name="rating" value="1" required> ★☆☆☆☆</label>
+            <label><input type="radio" name="rating" value="2"> ★★☆☆☆</label>
+            <label><input type="radio" name="rating" value="3"> ★★★☆☆</label>
+            <label><input type="radio" name="rating" value="4"> ★★★★☆</label>
+            <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install-date" required>
+
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features:</legend>
+            <label><input type="checkbox" name="features" value="durability"> Durability</label>
+            <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+            <label><input type="checkbox" name="features" value="performance"> Performance</label>
+            <label><input type="checkbox" name="features" value="design"> Design</label>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="review">Written Review (optional):</label>
+        <textarea id="review" name="review" rows="4"></textarea>
+
+        <!-- User Name -->
+        <label for="username">Your Name (optional):</label>
+        <input type="text" id="username" name="username">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <footer>
+        <p>&copy; Ezenwoke Uchechukwu, Nigeria.2025 Product Review Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
