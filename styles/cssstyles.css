@@ -1,3 +1,17 @@
+/* Load Google Fonts with font-family declarations */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #F5F5F5;
+    --font-family: "Roboto", sans-serif; /* For general text */
+    --heading-font-family: "Playfair Display", serif; /* For headings */
+}/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
