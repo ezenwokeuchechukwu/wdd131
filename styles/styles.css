@@ -1,110 +1,145 @@
-/* Load Google Fonts with font-family declarations */
+/* Load Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
+/* Define Global Variables */
 :root {
-    --primary-color: #4CAF50;
+    --primary-color: #2E8B57;
     --secondary-color: #F5F5F5;
-    --font-family: "Roboto", sans-serif; /* For general text */
-    --heading-font-family: "Playfair Display", serif; /* For headings */
+    --accent-color: #F4A460;
+    --font-family: "Roboto", sans-serif;
+    --heading-font-family: "Playfair Display", serif;
 }
 
+/* Global Styling */
 body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
+    color: #333;
 }
 
+/* Header */
 header {
     background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    font-family: var(--heading-font-family); /* Use Playfair Display for the header */
-}
-
-header::after {
-    content: "";
-    display: block;
-    height: 4px;
-    background-color: white;
-    margin-top: 1rem;
 }
 
 nav ul {
-    display: none;
-    flex-direction: column;
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
-    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
-    display: block;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    background-color: #45a049;
+    color: #FFD700; /* Gold Hover Effect */
 }
 
-.hamburger {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-main {
-    padding: 1rem;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-figure {
-    margin: 0;
+/* Hero Section */
+.hero {
     text-align: center;
-    font-family: var(--heading-font-family); /* Use Playfair Display for captions */
+    padding: 40px;
+    background-color: #FFE4B5;
+    font-family: var(--heading-font-family);
 }
 
+/* Cards Container */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Card */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Images */
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Card Links */
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 5px 0;
+}
+
+.card ul li a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.card ul li a:hover {
+    color: #FFD700; /* Gold Hover Effect */
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
     background-color: var(--primary-color);
     color: white;
-    font-family: var(--font-family); /* Use Roboto for footer text */
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer::after {
-    content: "Thank you for visiting!";
-    display: block;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #ffffffcc; /* Slightly transparent white text */
-}
-
-.menu ul.show {
-    display: flex;
-}
-
-/* Example @media query */
-@media (min-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: row;
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
+    .card {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
     }
 }
